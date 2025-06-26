@@ -1,0 +1,95 @@
+gitignore
+# Android Studio IDE files
+*.iml
+.gradle/
+/local.properties
+.idea/
+# /.idea/caches/ # Covered by .idea/
+# /.idea/libraries/ # Covered by .idea/
+# /.idea/modules.xml # Covered by .idea/
+# /.idea/workspace.xml # Covered by .idea/
+# /.idea/navEditor.xml # Covered by .idea/
+# /.idea/assetWizardSettings.xml # Covered by .idea/
+
+# Android Studio Log files (optional, but good to ignore)
+*.log
+.idea/shelf/
+
+# macOS specific files
+.DS_Store
+
+# Build directory
+/build/
+
+# Output directories for built files
+/app/build/
+/captures/ # If this is where Android Studio saves screenshots/screen recordings
+
+# Native build files (if you have NDK components)
+.externalNativeBuild/
+.cxx/
+
+# Gradle files
+.gradletasknamecache/ # Gradle task history
+gradle-wrapper.jar # If you want everyone to use the gradlew script with the defined wrapper
+# Some teams commit gradle-wrapper.jar, others don't.
+# If you ignore it, ensure everyone knows how to generate it if missing (./gradlew wrapper)
+
+# Secrets and sensitive information
+# It's crucial not to commit API keys or other secrets.
+# local.properties is already ignored, which is good for SDK location.
+# Consider adding other potential secret files if you use them.
+# Example:
+# secrets.properties
+# *.keystore
+# google-services.json # If you download it directly and don't want to commit it,
+                      # but usually this is versioned if not containing sensitive info.
+                      # If it does contain sensitive info, use environment variables or
+                      # other secure methods to inject it during build.
+
+# Lint results (optional, some teams commit them for tracking)
+lint-results-*.xml
+lint-results-*.html
+
+# Profiling files (optional)
+*.hprof
+*.snapshot
+
+# Test related files (if generated and not needed in VCS)
+/app/test-results/
+/app/build/reports/
+/app/build/outputs/apk/androidTest/
+/app/build/outputs/androidTest-results/
+
+# Hilt/Dagger generated files (if they appear outside /build and you don't want to track them)
+# Usually these are inside /build/generated, which is already covered by /build/
+# If you see specific generated files outside /build you want to ignore, add them here.
+# For example, if you see them at the root of a module:
+# /app/generated/
+
+# Firebase Crashlytics generated files (if any outside /build)
+# Usually handled, but if you see specific files:
+# crashlytics.properties
+# fabric.properties
+
+# Generated code from other annotation processors (if not in /build)
+
+# User-specific local files (example, if someone uses a specific tool)
+# my-local-tool-config.xml
+
+### IntelliJ specific files that might not be fully covered by .idea/ ###
+# These are often covered, but being explicit can sometimes help if .idea/ itself is accidentally committed.
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/gradle.xml
+# .idea/misc.xml
+# .idea/vcs.xml # Usually you want to commit this one if your team shares VCS settings
+
+# If you use Buck, add Buck files
+# buck-out/
+# .buckd/
+
+# If you use Bazel, add Bazel files
+# bazel-*/
+
+# Remove duplicate local.properties (already at the top)
