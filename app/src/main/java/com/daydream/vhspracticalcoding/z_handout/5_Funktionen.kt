@@ -4,7 +4,7 @@ fun main() {
 
     // Funktionen
 
-    class UserWithFunctions(
+    class User(
         var name: String,
         var lastName: String? = null,
         var isLoggedIn: Boolean
@@ -35,8 +35,7 @@ fun main() {
         }
     }
 
-    val userWithFunctions =
-        UserWithFunctions(name = "Peter", isLoggedIn = true) // Nachname ist null
+    val userWithFunctions = User(name = "Peter", isLoggedIn = true) // Nachname ist null
     // Eine Funktion der Klasse aufrufen und das Ergebnis in einer Variable speichern
     val userHasCompleteProfile = userWithFunctions.hasCompleteProfile()
     // Alternativ direkt
