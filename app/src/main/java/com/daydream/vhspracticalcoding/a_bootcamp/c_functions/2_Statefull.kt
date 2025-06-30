@@ -5,9 +5,9 @@ package com.daydream.vhspracticalcoding.a_bootcamp.c_functions
 // TODO schreibe eine Funktion die das derzeitige Ergebnis auf 0 zurücksetzt
 // TODO schreibe eine Funktion die einen String zurück gibt, der das Ergebnis darstellt
 
-class SolutionStatefulCalculator {
-
-    private var result = 0
+class SolutionStatefulCalculator(
+    private var result: Int = 0
+) {
 
     fun sum(number: Int) {
         result = result + number

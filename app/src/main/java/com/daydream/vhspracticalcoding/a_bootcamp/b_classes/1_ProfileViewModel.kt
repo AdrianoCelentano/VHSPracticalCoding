@@ -43,7 +43,7 @@ data class SolutionProfile(
 )
 
 @Composable
-fun ProfileComposable() {
+private fun ProfileComposable() {
     val profileViewmodel = SolutionProfileViewModel()
     Box(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.align(Alignment.Center)) {
